@@ -1,0 +1,52 @@
+<div class="side-menu-fixed attorneys-menus">
+  <div class="scrollbar side-menu-bg">
+    <ul class="nav navbar-nav side-menu" id="sidebarnav">
+      <li>
+        <a routerLink="/attorneys"><i class="ti-menu-alt"></i><span class="right-nav-text">All Attorneys</span></a>
+      </li>
+      <li>
+        <a routerLink="/attorneys/attorneysarchive"><i class="ti-comments"></i><span class="right-nav-text">Archive</span></a>
+      </li>
+      <li>
+        <a routerLink="/"><i class="ti-email"></i><span class="right-nav-text">Permissions</span></a>
+      </li>
+      <li>
+        <a (click)="openLg(alerttoattorney)" href="javascript:;"><i class="ti-email"></i><span class="right-nav-text">Alert
+            to Attorneys</span></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Alert to attoneys popup -->
+
+<ng-template #alerttoattorney let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Shout Box</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <select class="form-control" id="attorneysname">
+            <option>AbithaBanu</option>
+            <option>Martin</option>
+            <option>santhosh</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="notes" placeholder="Notes"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+      close
+    </button>
+  </div>
+</ng-template>

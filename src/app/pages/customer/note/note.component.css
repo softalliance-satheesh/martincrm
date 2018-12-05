@@ -1,0 +1,9 @@
+.customer-note select#attorneysname {
+    height: 47px;
+}
+a.emptyspace {
+    margin: 10px;
+}
+a.button.printcls {
+    color: #fff;
+}

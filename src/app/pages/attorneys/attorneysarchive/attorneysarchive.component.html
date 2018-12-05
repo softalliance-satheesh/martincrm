@@ -1,0 +1,205 @@
+<div class="container-fluid">
+  <div class="row">
+    <app-attorneysidebar></app-attorneysidebar>
+    <div class="content-wrapper">
+      <div class="page-title attorneytitle">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4 class="mb-0">Attorneys</h4>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right ">
+              <!--
+                <li class="breadcrumb-item"><a href="#" class="default-color">Home</a></li>
+                <li class="breadcrumb-item active">App Contacts</li>
+              -->
+
+              <a class="button" href="javascript:void(0);">
+                <i class="ti-plus"></i>Add New Attorney</a>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- main body -->
+      <div class="row">
+        <div class="col-md-12 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="d-block d-md-flex justify-content-between">
+                <div class="d-block">
+                  <h5 class="card-title pb-0 border-0 rm-mr ">
+                    Manage Attorneys
+                  </h5>
+                </div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20">
+                  <h6 class="rm-mr">Show</h6>
+                </div>
+                <div class="d-block d-md-flex clearfix sm-mt-20">
+                  <div class="clearfix">
+                    <div class="box">
+                      <select class="n-entries fancyselect sm-mb-20 mr-20">
+                        <option value="1">10</option>
+                        <option value="2">25</option>
+                        <option value="3">50</option>
+                        <option value="4">100</option>
+                        <option value="4">All</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="widget-search ml-0 clearfix">
+                    <i class="fa fa-search"></i>
+                    <input type="search" class="form-control" placeholder="Search...." />
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive attorneyarchive-table mt-20">
+                <table class="table center-aligned-table">
+                  <thead>
+                    <tr class="text-dark">
+                      <th>Member</th>
+                      <th>User Name</th>
+                      <th>Email</th>
+                      <th>Phone Number</th>
+                      <th>Year of Practice</th>
+                      <th>Location</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a routerLink="/attorneys/profile">
+                          <img class="img-fluid avatar-small" src="assets/images/team/09.jpg" alt="" /></a>
+                      </td>
+                      <td>
+                        <a routerLink="/attorneys/profile">Felica Queen</a>
+                      </td>
+                      <td>
+                        <a routerLink="/attorneys/profile">felica@gmail.com</a>
+                      </td>
+                      <td>5458084949</td>
+                      <td>2000</td>
+                      <td><span class="">Trichy</span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-times text-danger"></i></b></a>
+                        <a class="pr-2" href="#"><i class="fa fa-pencil"></i></a>
+                        <a href="#"><i class="fa fa-trash-o text-danger"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a routerLink="/attorneys/profile">
+                          <img class="img-fluid avatar-small" src="assets/images/team/07.jpg" alt="" /></a>
+                      </td>
+                      <td><a routerLink="/attorneys/profile">Doe</a></td>
+                      <td>
+                        <a routerLink="/attorneys/profile"> doe@gmail.com</a>
+                      </td>
+                      <td>
+                        <a routerLink="/attorneys/profile"> 5458084949</a>
+                      </td>
+                      <td>2014</td>
+                      <td><span class="">Bryanston</span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa  fa-times text-danger"></i></b></a>
+                        <a class="pr-2" href="#">
+                          <i class="fa fa-pencil"></i></a>
+                        <a href="#">
+                          <i class="fa fa-trash-o text-danger"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img class="img-fluid avatar-small" src="assets/images/team/07.jpg" alt="" />
+                      </td>
+                      <td>Alice Williams</td>
+                      <td>alicewilliams@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2011</td>
+                      <td><span class="">Bryanston</span></td>
+
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-times text-danger"></i></b></a>
+                        <a class="pr-2" href="#">
+                          <i class="fa fa-pencil"></i></a>
+                        <a href="#">
+                          <i class="fa fa-trash-o text-danger"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img class="img-fluid avatar-small" src="assets/images/team/08.jpg" alt="" />
+                      </td>
+                      <td>Paul Flavius</td>
+                      <td>paulflavius@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2013</td>
+                      <td><span class="">Bryanston</span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-times text-danger"></i></b></a>
+                        <a class="pr-2" href="#">
+                          <i class="fa fa-pencil"></i></a>
+                        <a href="#">
+                          <i class="fa fa-trash-o text-danger"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="sm-mt-20">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item ">
+                      <a class="page-link" href="#">Previous</a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-white p-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-center text-md-left">
+              <p class="mb-0">
+                &copy; Copyright <span id="copyright"> </span>.
+                <a href="#"> martinvermaakcrm.co.za </a> All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <ul class="text-center text-md-right">
+              <li class="list-inline-item">
+                <a href="#">Terms & Conditions </a>
+              </li>
+              <li class="list-inline-item"><a href="#">API Use Policy </a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy </a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!-- Add New Attorneys modal popup -->

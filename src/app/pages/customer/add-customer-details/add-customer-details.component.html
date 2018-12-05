@@ -1,0 +1,278 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="side-menu-fixed attorneys-menus">
+      <div class="sidebar-title">
+        <h5>All Clients</h5>
+        <h6>Recent Hearings</h6>
+      </div>
+      <perfect-scrollbar style="max-width: 600px; max-height: 700px;">
+        <div class="scrollbar side-menu-bg">
+          <ul class="nav navbar-nav side-menu" id="sidebarnav">
+            <li><a href="#"><span class="listText">Divorce hearing<i> (Roshni Ambrogio , 04/18/2019 08:00:00)</i></span></a></li>
+            <li><a href="#"><span class="listText">Marfleet matter<i> (Beatrice Marfleet , 04/11/2019 08:00:00)</i></span></a></li>
+            <li><a href="#"><span class="listText">Hearing for the Report of Mrs Knepshield.<i> (Tsholofelo Knepsheld ,
+                    02/15/2019 08:30:00)</i></span></a></li>
+            <li><a href="#"><span class="listText">Hearing for the Report of Mrs Knepshield.<i> (Tsholofelo Knepsheld ,
+                    02/15/2019 08:30:00)</i></span></a></li>
+            <li><a href="#"><span class="listText">Trial <i> (Sukoluhle Nkala , 02/06/2019 09:00:00)</i></span></a></li>
+            <li><a href="#"><span class="listText">Trial <i> (Sukoluhle Nkala , 02/06/2019 09:00:00)</i></span></a></li>
+            <li><a href="#"><span class="listText">Trial <i> (Sukoluhle Nkala , 02/06/2019 09:00:00)</i></span></a></li>
+            <li><a href="#"><span class="listText">Trial <i> (Sukoluhle Nkala , 02/06/2019 09:00:00)</i></span></a></li>
+            <li><a href="#"><span class="listText">Trial <i> (Sukoluhle Nkala , 02/06/2019 09:00:00)</i></span></a></li>
+            <li><a href="#"><span class="listText">Trial <i> (Sukoluhle Nkala , 02/06/2019 09:00:00)</i></span></a></li>
+          </ul>
+        </div>
+      </perfect-scrollbar>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="page-title attorneytitle">
+      </div>
+      <div class="row">
+        <div class="col-md-12 mb-30">
+          <div class="card card-statistics mb-30">
+            <div class="card-body doyouwantbutton">
+              <h5 class="card-title">Do you want to add </h5>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" id="Company" name="customRadio" type="radio" [checked]="companyForm"
+                  (change)="companyChecked()">
+                <label class="custom-control-label" for="Company">Company</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" id="Individual" name="customRadio" type="radio" [checked]="individualForm"
+                  (change)="individualChecked()">
+                <label class="custom-control-label" for="Individual">Individual</label>
+              </div>
+            </div>
+
+            <!--company form details-->
+
+            <form>
+              <!--individual details-->
+              <div *ngIf="individualForm == true; then thenBlock else elseBlock"></div>
+              <ng-template #thenBlock>
+                <div id="individualform">
+                  <h5>Contact Details</h5>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="individualfirstname">First Name *</label>
+                      <input class="form-control" id="individualfirstname" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="individualsurname">Surname</label>
+                      <input class="form-control" id="individualsurname" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="mailidindividual">Mail Id</label>
+                      <input class="form-control" id="mailidindividual" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="individualcreditlimits">Credit limits</label>
+                      <input class="form-control" id="individualcreditlimits" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="individualcontact1">Contact 1</label>
+                      <input class="form-control" id="individualcontact1" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="individualcontact2">Contact 2</label>
+                      <input class="form-control" id="individualcontact2" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="individualmobile">Mobile</label>
+                      <input class="form-control" id="individualmobile" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="individualdob">DOB</label>
+                      <input class="form-control" id="individualdob" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="individualAddress1">Address1</label>
+                      <input class="form-control" id="individualAddress1" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="individualAddress2">Address2</label>
+                      <input class="form-control" id="individualAddress2" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="individualCountry">Country</label>
+                      <select class="form-control" id="individualCountry">
+                        <option selected="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="individualProvince">Province</label>
+                      <input class="form-control" id="individualProvince" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="individualcity">City</label>
+                      <input class="form-control" id="individualcity" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="individualzipcode">Zipcode</label>
+                      <input class="form-control" id="individualzipcode" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="individualbankdetails">Bank Details</label>
+                      <input class="form-control" id="individualbankdetails" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="individualnotes">Personal Notes</label>
+                      <textarea class="form-control" id="individualnotes" placeholder=""></textarea>
+                    </div>
+                  </div>
+
+                  <a class="button black icon x-small" href="javascript:void(0);"> Add More <i class="ti-plus"></i></a>
+                  <a class="button black icon x-small" href="javascript:void(0);"> Add Third Party <i class="ti-plus"></i></a>
+                </div>
+                <!--individual details end here-->
+              </ng-template>
+              <ng-template #elseBlock>
+                <!--company details-->
+                <div id="companydetailform">
+                  <div class="form-group">
+                    <label for="nameofcompany">Name of Company</label>
+                    <input class="form-control" id="nameofcompany" placeholder="" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="companyregistration">Company Registration</label>
+                    <input class="form-control" id="companyregistration" placeholder="" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="vatnumber">VAT Number</label>
+                    <input class="form-control" id="vatnumber" placeholder="" type="text">
+                  </div>
+                  <h5>Primary Contact</h5>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="companyfirstname">First Name *</label>
+                      <input class="form-control" id="companyfirstname" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="companysurname">Surname</label>
+                      <input class="form-control" id="companysurname" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="mailidcompany">Mail Id</label>
+                      <input class="form-control" id="mailidcompany" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="companycreditlimits">Credit limits</label>
+                      <input class="form-control" id="companycreditlimits" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="companycontact1">Contact 1</label>
+                      <input class="form-control" id="companycontact1" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="companycontact2">Contact 2</label>
+                      <input class="form-control" id="companycontact2" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="companymobile">Mobile</label>
+                      <input class="form-control" id="companymobile" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="companydob">DOB</label>
+                      <input class="form-control" id="companydob" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="Address1">Address1</label>
+                      <input class="form-control" id="Address1" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="Address2">Address2</label>
+                      <input class="form-control" id="Address2" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="Country">Country</label>
+                      <select class="form-control" id="Country">
+                        <option selected="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="Province">Province</label>
+                      <input class="form-control" id="Province" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="city">City</label>
+                      <input class="form-control" id="city" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="zipcode">Zipcode</label>
+                      <input class="form-control" id="zipcode" placeholder="" type="text">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="companybankdetails">Bank Details</label>
+                      <input class="form-control" id="companybankdetails" placeholder="" type="text">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="personalnotes">Personal Notes</label>
+                      <textarea class="form-control" id="personalnotes" placeholder=""></textarea>
+                    </div>
+                  </div>
+
+                  <a class="button black icon x-small" href="javascript:void(0);"> Add More <i class="ti-plus"></i></a>
+                  <a class="button black icon x-small" href="javascript:void(0);"> Add Third Party <i class="ti-plus"></i></a>
+                </div>
+                <!--company details end-->
+              </ng-template>
+              <div class="button-wrapper">
+                <button class="btn btn-primary waves-effect" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-white p-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-center text-md-left">
+              <p class="mb-0"> &copy; Copyright <span id="copyright"> </span>. <a href="#"> martinvermaakcrm.co.za </a>
+                All Rights Reserved. </p>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <ul class="text-center text-md-right">
+              <li class="list-inline-item"><a href="#">Terms & Conditions </a> </li>
+              <li class="list-inline-item"><a href="#">API Use Policy </a> </li>
+              <li class="list-inline-item"><a href="#">Privacy Policy </a> </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>

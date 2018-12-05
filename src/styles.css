@@ -1,1 +1,689 @@
 /* You can add global styles to this file, and also import other style files */
+
+ul.nav.navbar-nav.mr-auto li {
+    line-height: 65px;
+    margin: 0 20px;
+}
+ul.nav.navbar-nav.mr-auto li a {
+    color: #000;
+}
+.colr-pink {
+    background: #ed3b85;
+}
+span.light-blu {
+    background: #017cfe;
+}
+
+/*only home file */
+.side-menu-fixed{
+  position: relative;
+}
+.width235 {
+    max-width: 235px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.fivecoloumn-wrapper {margin: 100px auto 30px auto;}
+.breadcrumb{
+    background-color:transparent;
+}
+
+.sidebar-inbox h5.card-title {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    border: none;
+    font-size: 14px;
+}
+.user-dashboard-left .side-menu {
+    background: #ffffff;
+    margin-top: 60px;
+}
+.sidebar-inbox ul li:last-child {
+    border-bottom: none;
+}
+.user-dashboard-left {
+    width: 250px;
+    /* margin-left: 15px; */
+}
+.user-dashboard-left ul li a {
+    width: 100%;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+    color: #000;
+    padding: 12px 15px 12px 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.user-dashboard-left i.ti-palette,
+.user-dashboard-left  i.ti-comments,
+.user-dashboard-left  i.ti-calendar,
+.user-dashboard-left  i.ti-menu-alt,
+.user-dashboard-left  i.ti-email {
+    margin-right: 10px;
+}
+
+ul.contentmenu li  {
+display:inline;
+}
+ul.contentmenu {
+    text-align: center;
+}
+ul.contentmenu li a {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 20px;
+}
+.user-dashboard-right {
+    width: 1050px;
+    float: left;
+    margin-left: 35px;
+    margin-bottom:30px;
+}
+
+.badge {
+    margin-left: 7px;
+}
+.sidebar-inbox .card-body {
+    padding: 10px;
+    margin-top: 30px;
+    background: #fff;
+}
+.sidebar-inbox h6 {
+    font-size: 13px;
+    line-height: normal;
+}
+.sidebar-inbox p {
+    font-size: 11px;
+}
+.sidebar-inbox{
+    -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-inbox .avatar-small {width: 40px;}
+body{
+    background:#fafafa;
+}
+.sidebar-inbox ul li.mb-30 {
+    margin-bottom: 5px !important;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.sidebar-inbox ul li.mb-30:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0px !important;
+}
+.user-dashboard-right ul.contentmenu {
+    padding-bottom: 35px;
+}
+/* .user-dashboard-left ul {
+    padding-left: 15px;
+} */
+.colorblue{
+    color:#1d3fbb;
+}
+.colorred{
+    color:#da3344;
+}
+.coloryellow{
+    color:#ffc009;
+}
+.colorlghtgreen{
+    color:#83ba43;
+}
+.colorlgtblue{
+    color:#007cff;
+}
+.colorpink{
+    color:#ed3e83;
+}
+.colordarkgreen{
+    color:#3eae58;
+}
+.colorvilote{
+    color:#8f298d;
+}
+.card-body{
+    padding:12px;
+}
+span.fc-event-dot {
+    margin: 0 5px 0 0;
+}
+#login_page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+  }
+  .login_page_left, .login_page_right {
+    display: inline-block;
+    float: left;
+    font-family: Poppins;
+    position: relative;
+  }
+  .login_page_left {
+    width: 60%;
+    background-color: #FFF;
+  }
+  .login_page_right {
+    width: 40%;
+    background-image: url('assets/images/desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .logo_sec {
+    padding: 33px 40px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .login_page_left .inner_wrap, .login_page_right .inner_wrap {
+    margin: 150px 33px 30px;
+  }
+  .logo_sec .logo {
+    line-height: 45px;
+  }
+  .login_page_left h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #1986be;
+  }
+  #login_frm {
+    max-width: 400px;
+    margin: 40px auto;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .log_contents {
+    max-width: 600px;
+    margin: auto;
+    color: #1b1b1b;
+  }
+  #login_frm .form-group {
+    margin-bottom: 10px;
+  }
+  .forgot_pwd {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .forgot_pwd a {
+    color: #1c3ebb;
+  }
+  button.calendar, button.calendar:active {
+    width: 2.75rem;
+    border:none;
+    background-image: url(assets/images/calendaricons.png)!important;
+    background-repeat: no-repeat !important;
+    background-size: 23px;
+    background-position: 0 10px !important;
+    background: #f6f7f8;
+    outline:none;}
+
+.btn-outline-secondary:hover {    outline:none;background-color: #f6f7f8;}
+  .btn-submit {
+    background: #2294f4 url('assets/images/arrow3.png') no-repeat scroll 77% 22px;
+    border: 1px solid #2294f4;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    height: 51px;
+    line-height: 51px;
+    padding: 0 51px 0 38px;
+    text-align: left;
+    transition: all 0.3s linear 0s;
+    width: auto;
+  }
+  .captcha_group {
+    margin: 23px 0 65px;
+    line-height: 25px;
+}
+
+  .captcha_group .checkbox {
+    margin: 0px;
+    display: inline-block;
+  }
+  .captcha_validation {
+    color: #1986be;
+    display: inline-block;
+    float: right;
+  }
+  .capt_input {
+    width: 50px;
+    height: 25px;
+    border-radius: 3.6px;
+    outline: none;
+    background-color: #ffffff;
+    border: solid 1px #bacadf;
+    padding: 0 5px;
+    font-size: 12px;
+    border: solid 1px #bacadf;
+    box-shadow: none;
+  }
+  .log_contents p {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .login_page_right {
+    width: 40%;
+    background-image: url('assets/images/desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .welcome h1 {
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: right;
+    color: #1986be;
+    float: right;
+  }
+  .wel_content {
+    max-width: 330px;
+    float: right;
+  }
+  .welcome p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #1b1b1b;
+  }
+  .welcome h1 span {
+    color: #000000;
+  }
+  #login_frm .form-group .form-control {
+    height: 56px;
+    line-height: 56px;
+    padding: 20px;
+    border: solid 1px #bacadf;
+    box-shadow: none;
+}
+#login_frm .form-group .form-control {
+    height: 56px;
+    line-height: 56px;
+    padding: 20px;
+    border: solid 1px #bacadf;
+    box-shadow: none;
+}
+
+.welcome span {
+    display: block;
+}
+
+.bell{
+    display:block;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    margin:50px auto 0;
+    color: #9e9e9e;
+    -webkit-animation: ring 4s .7s ease-in-out infinite;
+    -webkit-transform-origin: 50% 4px;
+    -moz-animation: ring 4s .7s ease-in-out infinite;
+    -moz-transform-origin: 50% 4px;
+    animation: ring 4s .7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+  }
+
+  .modal-content{
+    animation-name: example;
+    animation-duration: 0.9s;
+  }
+  ul.attorneys-tabs li:nth-child(1) {margin-left: 0px;}
+  ul.attorneys-tabs li:nth-child(5) {    margin-right: 0px;}
+  
+  @keyframes example {
+    0%   {transform: scale(0.5)}
+    75%  {transform: scale(1.1)}
+    100% {transform: scale(1)}
+  }
+
+
+a,
+i,
+span {
+    display: inline-block;
+    text-decoration: none
+}
+
+
+@keyframes swing {
+    20% {
+        transform: rotate3d(0, 0, 1, 15deg)
+    }
+    40% {
+        transform: rotate3d(0, 0, 1, -10deg)
+    }
+    60% {
+        transform: rotate3d(0, 0, 1, 5deg)
+    }
+    80% {
+        transform: rotate3d(0, 0, 1, -5deg)
+    }
+    to {
+        transform: rotate3d(0, 0, 1, 0deg)
+    }
+}
+
+.swing {
+    transform-origin: top center;
+    animation-name: swing
+}
+
+.pulse {
+    animation-name: pulse
+}
+
+
+span.badge-pulse {
+    background: #de3831;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(135, 187, 68, 0.4);
+    animation: BadgePulse 1.8s infinite;
+}
+
+@-webkit-keyframes BadgePulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(135, 187, 68, 0.4)
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(135, 187, 68, 0.4)
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(135, 187, 68, 0.4)
+    }
+}
+
+@keyframes BadgePulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(254, 25, 94, .4);
+        box-shadow: 0 0 0 0 rgba(254, 25, 94, .4)
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(254, 25, 94, 0);
+        box-shadow: 0 0 0 10px rgba(254, 25, 94, 0)
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 20px rgba(254, 25, 94, 0);
+        box-shadow: 0 0 0 20px rgba(254, 25, 94, 0)
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+nav.navbar .nav-item>a span {
+position: absolute;
+top: 10px;
+right: 8px;
+border: 3px solid #fff;
+}
+
+.side-menu-fixed.attorneys-menus {
+    position: fixed;
+}
+select.n-entries {
+    height: 45px;
+    width: 75px;
+    border: none;
+    background: #f6f7f8;
+    padding-left: 10px;
+}
+h5.rm-mr, h6.rm-mr {
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+.page-title.attorneytitle {margin-top: 60px;}
+.customtables button.btn.btn-secondary {
+    background: transparent;
+    color: #000;
+    border: none;
+    padding: 0 0px;
+}
+tr.headerbg.open th {
+    background: #88bc45;
+    color: #fff;
+}
+.user-dashboard-left ul li {
+    list-style: none;
+}
+.widget {background: #fff;border-radius: 0;border: none;margin-bottom: 30px;}
+.widget-body {padding: 1.4rem;}
+.em-separator.separator-dashed {border: 1px dashed #eee;}
+.em-separator {height: 0;    margin: 20px 0;}
+.has-shadow {box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);}
+.attorneyprofile p {margin-bottom: 10px;font-size: 14px;}
+.clientlisting .table tr td {padding: 14px 5px;}
+.attorneys-tabs li a i {font-size: 20px;    margin-right: 5px;   color: #84ba3f;}
+
+.fc .customtables table {table-layout: auto;    margin-bottom: 0;}
+.customtables tr td button {height: auto;}
+.customtables tr th {
+    display: inline-block;
+    /* padding: px 0px; */
+    height: 25px;
+    font-size:14px;
+    line-height: 25px;
+
+}
+.customtables tr td {display: inline-block;width: 144.6px;}
+.customtables tr th:nth-child(1) {text-align: left;padding-left: 15px;}
+.customtables td {
+    padding: 8px 0px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    height: 18px;
+}
+.customtables tr:hover td {background-color: #f5f5f5;}
+.popover{text-align: center;}
+ul.attorneys-tabs li {
+    display: inline-block;
+    margin: 5px 0px;
+}
+.profilemenu-link ul {
+    display:inline;
+}
+.profilemenu-link {
+    text-align: center;
+}
+.attorneys-tabs li a {
+    font-size: 13.3px;
+    color: #323232;
+    padding: 6px 20px;
+    border: 1px solid #eee;
+    background: #f6f7f8;
+}
+
+.profilemenu-link {    margin-bottom: 30px;}
+.attorneyprofile {    padding: 10px;}
+ul.nav li a.active {    color: #88bc45 !important;}
+.attorneyprofiletable {    margin-bottom: 30px;}
+.sidebar-title h5, .sidebar-title h6 {
+    color: #fff;
+    margin: 0;
+}
+.sidebar-title {    background: #84ba3f;    text-align: center;}
+.sidebar-title h5 {
+    padding: 30px 0;
+}
+.sidebar-title h6 {
+    padding-bottom: 30px;
+}
+div#companyform {    padding: 10px;}
+.attorneyprofile h3 {    margin-bottom: 20px !important;}
+
+.attorneyprofile  p {    font-size: 14px;}
+.attorneyprofile  p span {
+    color: #84ba3f;
+    font-weight: 600;
+    margin-right:10px;
+}
+ul.nav.attorneys-tabs li a.active {
+    color: #fff !important;
+    background: #88bc45;
+    border-color: transparent;
+}
+ul.nav.attorneys-tabs li a.active i{ 
+    color: #fff !important;
+}
+.card.first-card{
+    background-color: #a77ffc;
+    background-image: -moz-linear-gradient(left, #a77ffc 0%, #ff6eac 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #a77ffc), color-stop(100%, #ff6eac));
+    background-image: -webkit-linear-gradient(left, #a77ffc 0%, #ff6eac 100%);
+    background-image: -o-linear-gradient(left, #a77ffc 0%, #ff6eac 100%);
+    background: -ms-linear-gradient(left, #a77ffc 0%, #ff6eac 100%);
+    background: linear-gradient(to right, #a77ffc 0%, #ff6eac 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+.card.second-card{    
+    background-color: #7f9bff;
+    background-image: -moz-linear-gradient(left, #7f9bff 0%, #2ddeff 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #7f9bff), color-stop(100%, #2ddeff));
+    background-image: -webkit-linear-gradient(left, #7f9bff 0%, #2ddeff 100%);
+    background-image: -o-linear-gradient(left, #7f9bff 0%, #2ddeff 100%);
+    background: -ms-linear-gradient(left, #7f9bff 0%, #2ddeff 100%);
+    background: linear-gradient(to right, #7f9bff 0%, #2ddeff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+.card.third-card{
+    background-color: #11d7e4;
+    background-image: -moz-linear-gradient(left, #11d7e4 0%, #48eaa1 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #11d7e4), color-stop(100%, #48eaa1));
+    background-image: -webkit-linear-gradient(left, #11d7e4 0%, #48eaa1 100%);
+    background-image: -o-linear-gradient(left, #11d7e4 0%, #48eaa1 100%);
+    background: -ms-linear-gradient(left, #11d7e4 0%, #48eaa1 100%);
+    background: linear-gradient(to right, #11d7e4 0%, #48eaa1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+.card.fourth-card{
+    background-color: #fe8c81;
+    background-image: -moz-linear-gradient(left, #fe8c81 0%, #fbd323 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #fe8c81), color-stop(100%, #fbd323));
+    background-image: -webkit-linear-gradient(left, #fe8c81 0%, #fbd323 100%);
+    background-image: -o-linear-gradient(left, #fe8c81 0%, #fbd323 100%);
+    background: -ms-linear-gradient(left, #fe8c81 0%, #fbd323 100%);
+    background: linear-gradient(to right, #fe8c81 0%, #fbd323 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+.card.fifth-card{
+background-color: #2ddeff;
+
+background-image: -moz-linear-gradient(left, #2ddeff 0%, #7f9bff 100%);
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #2ddeff), color-stop(100%, #7f9bff));
+background-image: -webkit-linear-gradient(left, #2ddeff 0%, #7f9bff 100%);
+background-image: -o-linear-gradient(left, #2ddeff 0%, #7f9bff 100%);
+background: -ms-linear-gradient(left, #2ddeff 0%, #7f9bff 100%);
+background: linear-gradient(to right, #2ddeff 0%, #7f9bff 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+.card-hover {
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.card-hover:hover {
+    webkit-transform: translateY(-4px) scale(1.01);
+    -moz-transform: translateY(-4px) scale(1.01);
+    -ms-transform: translateY(-4px) scale(1.01);
+    -o-transform: translateY(-4px) scale(1.01);
+    transform: translateY(-4px) scale(1.01);
+    -webkit-box-shadow: 0 14px 24px rgba(62, 57, 107, 0.1);
+    box-shadow: 0 14px 24px rgba(62, 57, 107, 0.1);
+}
+.card-hover h4, .card-hover p a, .card-hover p{
+    color:#ffffff;
+}
+
+.permission tbody tr td:nth-child(1) {padding-left: 10px;}
+
+
+#calendar-list .fc-listWeek-view {
+    border: none;
+}
+#calendar-list tr.headerbg {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #e0dddd;
+}
+#calendar-list tr.headerbg.open {
+margin-bottom: 0;
+}
+tr.last-row td {
+border-bottom: none !important;
+padding-bottom: 20px;
+}
+.user-dashboard-left .side-menu li {    margin-bottom: 6px;}
+ul.collapse.show li a {    padding-left: 35px;}
+ul.collapse {padding: 0;}
+li.nav-item.flag img {margin-top: 15px;}
+ul#sidebarnav > li:hover > a, ul#sidebarnav > li ul.collapse >li:hover > a {background: #f3f1fa !important;}  
+ul#sidebarnav > li:hover > a, ul#sidebarnav > li ul.collapse >li:hover > a {color: #88bc45 !important;}
+.attorneyprofile img.avatar {
+    border: 3px solid rgba(52,40,104,.08);
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
+}
+.matters tbody tr td:nth-child(2), 
+.profile tbody tr td:nth-child(1),
+.permission tbody tr td:nth-child(1),
+.msgsystem tbody tr td:nth-child(1),
+.attorneytablecss tbody tr td:nth-child(2),
+.attorneyarchive-table tbody tr td:nth-child(2),
+.receivemsg tbody tr td:nth-child(1),
+.customertable tbody tr td:nth-child(2)
+ {
+    font-weight: 600;
+    color: #333333 !important;
+}
+.label-success {
+    background-color: #4caf50;
+}
+.label-danger {
+    background-color: #ff5722;
+}
+.label-warning{    background-color: #ffc107;}
+.label-success, .label-danger, .label-warning {
+text-align: center;
+display: inline-block;
+padding: 5px 10px;
+font-weight: 500;
+font-size: 1rem;
+}
+.attorneyprofiletable h5.card-title {
+    line-height: 50px;
+    margin-bottom: 0;
+}

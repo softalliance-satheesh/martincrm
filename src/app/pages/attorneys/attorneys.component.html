@@ -1,0 +1,318 @@
+<div class="container-fluid">
+  <div class="row">
+    <app-attorneysidebar></app-attorneysidebar>
+    <div class="content-wrapper">
+      <div class="page-title attorneytitle">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4 class="mb-0">Attorneys</h4>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right ">
+              <a (click)="openLg(taskcontent)" class="button" href="javascript:void(0);"> <i class="ti-plus"></i>Add
+                New Attorney</a>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- main body -->
+      <div class="row">
+        <div class="col-md-12 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="d-block d-md-flex justify-content-between">
+                <div class="d-block">
+                  <h5 class="card-title pb-0 border-0 rm-mr ">Manage Attorneys</h5>
+                </div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20"></div>
+                <div class="d-block d-md-flex clearfix sm-mt-20">
+                  <h6 class="rm-mr">Show</h6>
+                </div>
+                <div class="d-block d-md-flex clearfix sm-mt-20">
+                  <div class="clearfix">
+                    <div class="box">
+                      <select class="n-entries fancyselect sm-mb-20 mr-20">
+                        <option value="1">10</option>
+                        <option value="2">25</option>
+                        <option value="3">50</option>
+                        <option value="4">100</option>
+                        <option value="4">All</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="widget-search ml-0 clearfix">
+                    <i class="fa fa-search"></i>
+                    <input type="search" class="form-control" placeholder="Search....">
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive attorneytablecss mt-20">
+                <table class="table center-aligned-table">
+                  <thead>
+                    <tr class="text-dark">
+                      <th>Member</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Phone Number </th>
+                      <th>Year of Practice </th>
+                      <th>Location </th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a routerLink="/attorneys/profile"> <img class="img-fluid avatar-small" src="assets/images/team/08.jpg"
+                            alt=""></a></td>
+                      <td><a routerLink="/attorneys/profile">Felica Queen</a></td>
+                      <td><a routerLink="/attorneys/profile">felica@gmail.com</a></td>
+                      <td>5458084949</td>
+                      <td>2000</td>
+                      <td><span class="">Trichy</span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td><a routerLink="/attorneys/profile"> <img class="img-fluid avatar-small" src="assets/images/team/09.jpg"
+                            alt=""></a> </td>
+                      <td><a routerLink="/attorneys/profile">Doe</a></td>
+                      <td><a routerLink="/attorneys/profile"> doe@gmail.com</a></td>
+                      <td><a routerLink="/attorneys/profile"> 5458084949</a></td>
+                      <td>2014</td>
+                      <td><span class="">Bryanston</span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td> <img class="img-fluid avatar-small" src="assets/images/team/07.jpg" alt=""> </td>
+                      <td>Alice Williams</td>
+                      <td>alicewilliams@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2011</td>
+                      <td><span class="">Bryanston</span></td>
+
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td> <img class="img-fluid avatar-small" src="assets/images/team/08.jpg" alt=""> </td>
+                      <td>Paul Flavius</td>
+                      <td>paulflavius@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2013</td>
+                      <td><span class="">Bryanston</span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td> <img class="img-fluid avatar-small" src="assets/images/team/09.jpg" alt=""> </td>
+                      <td>Michael Bean</td>
+                      <td>michaelbean@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2000</td>
+                      <td><span class="">Sandton</span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td> <img class="img-fluid avatar-small" src="assets/images/team/10.jpg" alt=""> </td>
+                      <td>Sara Lisbon</td>
+                      <td>saralisbon@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2001</td>
+                      <td><span class="">Sandton </span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td> <img class="img-fluid avatar-small" src="assets/images/team/07.jpg" alt=""> </td>
+                      <td>Anne Smith</td>
+                      <td>annesmith@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2008</td>
+                      <td><span class="">Sandton</span></td>
+
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td> <img class="img-fluid avatar-small" src="assets/images/team/10.jpg" alt=""> </td>
+                      <td>Mellissa Doe</td>
+                      <td>mellissadoe@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2007</td>
+                      <td><span class="">Sandton</span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td> <img class="img-fluid avatar-small" src="assets/images/team/07.jpg" alt=""> </td>
+                      <td>Joana williams</td>
+                      <td>joanawilliams@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2001</td>
+                      <td><span class="">Bryanston </span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td> <img class="img-fluid avatar-small" src="assets/images/team/08.jpg" alt=""> </td>
+                      <td>Michael Bean</td>
+                      <td>michaelbean@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2009</td>
+                      <td>
+                        <span class="">Bryanston </span>
+                      </td>
+
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td> <img class="img-fluid avatar-small" src="assets/images/team/02.jpg" alt=""> </td>
+                      <td>Paul Flavius</td>
+                      <td>paulflavius@gmail.com</td>
+                      <td>5458084949</td>
+                      <td>2003</td>
+                      <td><span class="">Sandton</span></td>
+                      <td>
+                        <a class="pr-2" href="#"><b><i class="fa fa-check text-success"></i></b></a>
+                        <a class="pr-2" href="#"> <i class="fa fa-pencil"></i></a> <a href="#"> <i class="fa fa-trash-o text-danger"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="sm-mt-20">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item "><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-white p-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-center text-md-left">
+              <p class="mb-0"> &copy; Copyright <span id="copyright"> </span>. <a href="#"> martinvermaakcrm.co.za </a>
+                All Rights Reserved. </p>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <ul class="text-center text-md-right">
+              <li class="list-inline-item"><a href="#">Terms & Conditions </a> </li>
+              <li class="list-inline-item"><a href="#">API Use Policy </a> </li>
+              <li class="list-inline-item"><a href="#">Privacy Policy </a> </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+<!-- Add New Attorneys modal popup-->
+
+<ng-template #taskcontent let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Add New Attorneys</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card-body">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="addnewattorneyname">First Name</label>
+            <input class="form-control is-valid" id="addnewattorneyname" placeholder="" required="" type="text" value="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="addnewattorneylname">Last Name</label>
+            <input class="form-control is-valid" id="addnewattorneylname" placeholder="" required="" type="text" value="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="addnewattorneyuname">Username</label>
+            <input class="form-control is-valid" id="addnewattorneyuname" placeholder=" " required="" type="text" value="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="addnewattorneypassword">Password</label>
+            <input class="form-control is-valid" id="addnewattorneyuname" placeholder="" required="" type="password"
+              value="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="addnewattorneyconfirmpassword">Confirm Password</label>
+            <input class="form-control is-valid" id="addnewattorneyconfirmpassword" placeholder="" required="" type="text"
+              value="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="addnewattorneymail">Mail Id</label>
+            <input class="form-control is-valid" id="addnewattorneymail" placeholder="" required="" type="email" value="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="addnewattorneycontact1">Contact1</label>
+            <input class="form-control is-valid" id="addnewattorneycontact1" placeholder="" required="" type="text"
+              value="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="addnewattorneycontact2">Contact2</label>
+            <input class="form-control is-valid" id="addnewattorneycontact2" placeholder="" required="" type="text"
+              value="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="addnewattorneylocation">Location</label>
+            <input class="form-control is-valid" id="addnewattorneylocation" placeholder="" required="" type="text"
+              value="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="addnewattorneysince">Since</label>
+            <input class="form-control is-valid" id="addnewattorneysince" placeholder="" required="" type="text" value="">
+          </div>
+        </div>
+
+        <div class="custom-file">
+          <label for="profilepicture">Profile Picture</label>
+          <input class="custom-file-input" id="customFile" type="file">
+          <label class="custom-file-label" for="customFile">Choose file</label>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">close</button>
+  </div>
+</ng-template>

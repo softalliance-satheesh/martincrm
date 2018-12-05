@@ -1,0 +1,296 @@
+<div class="calendar-main mb-30" *ngIf="!showCalendar">
+  <div class="row">
+    <div class="col-lg-12">
+      <div id="calendar-list" class="fc fc-unthemed fc-ltr">
+        <div class="fc-toolbar fc-header-toolbar">
+          <div class="fc-left">
+            <div class="fc-button-group">
+              <button type="button" class="fc-prev-button fc-button fc-state-default fc-corner-left" aria-label="prev">
+                <span class="fc-icon fc-icon-left-single-arrow"></span>
+              </button>
+              <button type="button" class="fc-next-button fc-button fc-state-default fc-corner-right" aria-label="next"><span
+                  class="fc-icon fc-icon-right-single-arrow"></span></button></div><button type="button" class="fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right">today</button>
+          </div>
+          <div class="fc-right">
+            <div class="fc-button-group">
+              <button type="button" class="fc-listWeek-button fc-button fc-state-default fc-state-active">list
+                week</button>
+              <button type="button" class="fc-month-button fc-button fc-state-default fc-corner-right" (click)="viewCalendar()">month</button></div>
+          </div>
+          <div class="fc-center">
+            <h4>Mar 11 – 17, 2018</h4>
+          </div>
+          <div class="fc-clear"></div>
+        </div>
+        <div class="fc-view-container" style="">
+          <div class="fc-view fc-listWeek-view fc-list-view fc-widget-content" style="">
+            <div class="fc-scroller" style="overflow: hidden auto;">
+              <div class="customtables">
+                <table class="table">
+                  <tbody>
+                    <tr class="headerbg" [ngClass]="{ 'open': days.monday }">
+                      <th width="78%" scope="col">Monday</th>
+                      <th width="15%" scope="col">March 12, 2018</th>
+                      <th width="4%" scope="col" style="text-align: right;padding-right: 15px !important;"><i
+                          _ngcontent-c3="" class="fa fa-chevron-down" (click)="toggleDay('monday')"></i></th>
+                    </tr>
+                    <tr *ngIf="days.monday">
+                      <td class="time-td">12:00pm - 12:30pm</td>
+                      <td><span class="fc-event-dot lred lblue"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="lorem ipsum content goes here" triggers="mouseenter:mouseleave" popoverTitle="Hearing">
+                          Hearing</button></td>
+                      <td><span class="fc-event-dot lyellow"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="lorem ipsum content goes here" triggers="mouseenter:mouseleave" popoverTitle="Task">
+                          Task</button></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Birthdays">
+                          Birthdays</button></td>
+                      <td><span class="fc-event-dot lblue"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Lead Details">
+                          Lead Details</button></td>
+                      <td><span class="fc-event-dot lpink"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Marketing">
+                          Marketing</button></td>
+                      <td><span class="fc-event-dot darkgreen"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Meeting">
+                          Meeting</button></td>
+                    </tr>
+                    <tr *ngIf="days.monday">
+                      <td>12:30pm - 01:00pm</td>
+                      <td></td>
+                      <td><span class="fc-event-dot lyellow"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="lorem ipsum content goes here" triggers="mouseenter:mouseleave" popoverTitle="Task">
+                          Task
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr *ngIf="days.monday">
+                      <td>01:00pm - 02:00pm</td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Birthdays">
+                          Birthdays
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr *ngIf="days.monday">
+                      <td>02:00pm - 03:00pm</td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Birthdays">
+                          Birthdays
+                        </button></td>
+                      <td></td>
+                      <td><span class="fc-event-dot lpink"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Marketing">
+                          Marketing
+                        </button></td>
+                      <td></td>
+                    </tr>
+                    <tr class="last-row" *ngIf="days.monday">
+                      <td>03:00pm - 04:00pm</td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Birthdays">
+                          Birthdays
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Meeting">
+                          Meeting
+                        </button></td>
+                    </tr>
+
+                    <tr class="headerbg" [ngClass]="{ 'open': days.tuesday }">
+                      <th width="78%" scope="col">Tuesday</th>
+
+                      <th width="15%" scope="col">March 12, 2018</th>
+                      <th width="4%" scope="col" style="        text-align: right;        padding-right: 15px !important;   "><i
+                          _ngcontent-c3="" class="fa fa-chevron-down" (click)="toggleDay('tuesday')"></i></th>
+                    </tr>
+                    <tr *ngIf="days.tuesday">
+                      <td>12:00pm - 12:30pm</td>
+                      <td></td>
+                      <td><span class="fc-event-dot lyellow"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="lorem ipsum content goes here" triggers="mouseenter:mouseleave" popoverTitle="Task">
+                          Task
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr *ngIf="days.tuesday">
+                      <td>12:30pm - 01:00pm</td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Birthdays">
+                          Birthdays
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr *ngIf="days.tuesday">
+                      <td>01:00pm - 02:00pm</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot lblue"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Lead Details">
+                          Lead Details
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr *ngIf="days.tuesday">
+                      <td>02:00pm - 03:00pm</td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Birthdays">
+                          Birthdays
+                        </button></td>
+                      <td></td>
+                      <td><span class="fc-event-dot lpink"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Marketing">
+                          Marketing
+                        </button></td>
+                      <td></td>
+                    </tr>
+                    <tr class="last-row" *ngIf="days.tuesday">
+                      <td>03:00pm - 04:00pm</td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Birthdays">
+                          Birthdays
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Pop title">
+                          Meeting
+                        </button></td>
+                    </tr>
+                    <tr class="headerbg" [ngClass]="{ 'open': days.wednesday }">
+                      <th width="78%" scope="col">Wednesday</th>
+
+                      <th width="15%" scope="col">March 13, 2018 </th>
+                      <th width="4%" scope="col" style="text-align: right; padding-right: 15px !important;"><i
+                          _ngcontent-c3="" class="fa fa-chevron-down" (click)="toggleDay('wednesday')"></i></th>
+                    </tr>
+                    <tr *ngIf="days.wednesday">
+                      <td>12:00pm - 12:30pm</td>
+                      <td></td>
+                      <td><span class="fc-event-dot lyellow"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="lorem ipsum content goes here" triggers="mouseenter:mouseleave" popoverTitle="Task">
+                          Task
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr *ngIf="days.wednesday">
+                      <td>12:30pm - 01:00pm </td>
+                      <td><span class="fc-event-dot lred lblue"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="lorem ipsum content goes here" triggers="mouseenter:mouseleave" popoverTitle="Hearing">
+                          Hearing
+                        </button></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Birthdays">
+                          Birthdays
+                        </button></td>
+                      <td></td>
+                      <td><span class="fc-event-dot lpink"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Marketing">
+                          Marketing
+                        </button></td>
+                      <td></td>
+                    </tr>
+                    <tr *ngIf="days.wednesday">
+                      <td>01:00pm - 02:00pm </td>
+                      <td><span class="fc-event-dot lred lblue"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="lorem ipsum content goes here" triggers="mouseenter:mouseleave" popoverTitle="Hearing">
+                          Hearing
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot lblue"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Lead Details">
+                          Lead Details
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr *ngIf="days.wednesday">
+                      <td>02:00pm - 03:00pm </td>
+                      <td></td>
+                      <td><span class="fc-event-dot lyellow"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="lorem ipsum content goes here" triggers="mouseenter:mouseleave" popoverTitle="Task">
+                          Task
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot lpink"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Marketing">
+                          Marketing
+                        </button></td>
+                      <td></td>
+                    </tr>
+                    <tr *ngIf="days.wednesday">
+                      <td>03:00pm - 04:00pm</td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot"></span><button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!"
+                          triggers="mouseenter:mouseleave" popoverTitle="Birthdays">
+                          Birthdays
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot darkgreen"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Meeting">
+                          Meeting
+                        </button></td>
+                    </tr>
+                    <tr class="last-row" *ngIf="days.wednesday">
+                      <td>04:00pm - 05:00pm</td>
+                      <td></td>
+                      <td><span class="fc-event-dot lyellow"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="lorem ipsum content goes here" triggers="mouseenter:mouseleave" popoverTitle="Task">
+                          Task
+                        </button></td>
+                      <td></td>
+                      <td></td>
+                      <td><span class="fc-event-dot lred"></span><button type="button" class="btn btn-secondary"
+                          ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Marketing">
+                          Marketing
+                        </button></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showCalendar">
+  <app-calendar></app-calendar>
+</div>

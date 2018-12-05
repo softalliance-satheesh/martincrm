@@ -1,0 +1,762 @@
+<div class="fivecoloumn-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right ">
+          <li class="breadcrumb-item">
+            <a href="#" class="default-color">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Page Title</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-6 col-md-6 width235 mb-30">
+        <div class="card card-statistics h-100 first-card card-hover">
+          <div class="card-body">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="text-danger">
+                  <img class="" src="assets/images/mailicon.png" alt="" />
+                </span>
+              </div>
+              <div class="float-right text-right">
+                <p class="card-text">Sep 24 - 30,2018</p>
+                <h4>05 Messages</h4>
+              </div>
+            </div>
+            <p class="text-right text-muted pt-3 mb-0 mt-2 border-top">
+              <a href="#"><i class="fa fa-exclamation-circle mr-1" aria-hidden="true"></i>Create New Message</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 width235 mb-30">
+        <div class="card card-statistics second-card h-100 card-hover">
+          <div class="card-body">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="text-danger">
+                  <img class="" src="assets/images/attorney.png" alt="" />
+                </span>
+              </div>
+              <div class="float-right text-right">
+                <p class="card-text ">Sep 24 - 30,2018</p>
+                <h4>12 Hearings</h4>
+              </div>
+            </div>
+            <p class="text-right text-muted pt-3 mb-0 mt-2 border-top">
+              <a (click)="openLg(content)" href="#"><i class="fa fa-exclamation-circle mr-1" aria-hidden="true"></i>
+                Create New Hearing</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 width235 mb-30">
+        <div class="card card-statistics third-card h-100 card-hover">
+          <div class="card-body">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="text-warning">
+                  <img class="" src="assets/images/thridicon.png" alt="" />
+                </span>
+              </div>
+              <div class="float-right text-right">
+                <p class="card-text">Sep 24 - 30,2018</p>
+                <h4>38 Tasks</h4>
+              </div>
+            </div>
+            <p class="text-right text-muted pt-3 mb-0 mt-2 border-top">
+              <a (click)="openLg(taskcontent)" href="#"><i class="fa fa-bookmark-o mr-1" aria-hidden="true"></i>Create
+                Tasks</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 width235 mb-30">
+        <div class="card card-statistics fourth-card h-100 card-hover">
+          <div class="card-body">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="text-success">
+                  <img class="" src="assets/images/meeting.png" alt="" />
+                </span>
+              </div>
+              <div class="float-right text-right">
+                <p class="card-text ">Sep 24 - 30,2018</p>
+                <h4>10 Meetings</h4>
+              </div>
+            </div>
+            <p class="text-right text-right text-muted pt-3 mb-0 mt-2 border-top">
+              <a (click)="openLg(createmeeting)" href="#"><i class="fa fa-calendar mr-1" aria-hidden="true"></i> Create
+                Meetings</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 width235 mb-30">
+        <div class="card card-statistics fifth-card h-100 card-hover">
+          <div class="card-body">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="text-primary">
+                  <img class="" src="assets/images/schdule.png" alt="" />
+                </span>
+              </div>
+              <div class="float-right text-right">
+                <p class="card-text">Sep 24 - 30,2018</p>
+                <h4>12 Schedules</h4>
+              </div>
+            </div>
+            <p class="text-muted pt-3 mb-0 mt-2 border-top">
+              <a href="#"><i class="fa fa-repeat mr-1" aria-hidden="true"></i> Add Daily
+                Schedules</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- left sidebar -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="user-dashboard-left">
+      <ul class="nav navbar-nav side-menu sidebar-inbox" id="sidebarnav">
+        <!-- menu item Dashboard -->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard">
+            <div class="pull-left">
+              <i class="ti-palette"></i><span class="right-nav-text">All Attorneys Diaries</span><span class="badge badge-pill badge-danger float-right mt-1">59</span>
+            </div>
+            <div class="pull-right"><i class="ti-angle-right"></i></div>
+            <div class="clearfix"></div>
+          </a>
+
+          <ul id="dashboard" class="collapse" data-parent="#sidebarnav">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Ateesh</a></li>
+            <li><a href="#">Martin Vermaak</a></li>
+            <li><a href="#">Roua Pienaar</a></li>
+            <li><a href="#">Michelle Soutter</a></li>
+            <li><a href="#">Aleisha Oliver</a></li>
+            <li><a href="#">Bradley Cullingworth</a></li>
+            <li><a href="#">Aurelia Singh</a></li>
+            <li><a href="#">Duncan O' Connor</a></li>
+            <li><a href="#">Savannah Bailey</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#elements">
+            <div class="pull-left">
+              <i class="ti-comments"></i><span class="right-nav-text">All Admin Diaries</span><span class="badge badge-pill badge-danger float-right mt-1">09</span>
+            </div>
+            <div class="pull-right"><i class="ti-angle-right"></i></div>
+            <div class="clearfix"></div>
+          </a>
+          <ul id="elements" class="collapse" data-parent="#sidebarnav">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Ateesh</a></li>
+            <li><a href="#">Patricia Godwin</a></li>
+            <li><a href="#">KP Phiri</a></li>
+            <li><a href="#">Priscilla Dlamini</a></li>
+            <li><a href="#">Michael Khola</a></li>
+            <li><a href="#">John Macwili</a></li>
+            <li><a href="#">The Godwin Boardroom</a></li>
+            <li><a href="#">Barkston Boardroom</a></li>
+            <li><a href="#">Florence Mbambo</a></li>
+            <li><a href="#">Puleng Kegakilwe</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#calendar-menu">
+            <div class="pull-left">
+              <i class="ti-calendar"></i><span class="right-nav-text">Access Request</span><span _ngcontent-c3="" class="badge badge-pill badge-warning float-right mt-1">08</span>
+            </div>
+            <div class="pull-right"><i class="ti-angle-right"></i></div>
+            <div class="clearfix"></div>
+          </a>
+          <ul id="calendar-menu" class="collapse" data-parent="#sidebarnav">
+            <li><a href="calendar.html">Nil </a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#mytask">
+            <div class="pull-left">
+              <i class="ti-menu-alt"></i><span class="right-nav-text">My Tasks</span><span _ngcontent-c3="" class="badge badge-pill badge-success float-right mt-1">08</span>
+            </div>
+            <div class="pull-right"><i class="ti-angle-right"></i></div>
+            <div class="clearfix"></div>
+          </a>
+          <ul id="mytask" class="collapse" data-parent="#sidebarnav">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Ateesh</a></li>
+            <li><a href="#">Patricia Godwin</a></li>
+            <li><a href="#">KP Phiri</a></li>
+            <li><a href="#">Priscilla Dlamini</a></li>
+            <li><a href="#">Michael Khola</a></li>
+            <li><a href="#">John Macwili</a></li>
+            <li><a href="#">The Godwin Boardroom</a></li>
+            <li><a href="#">Barkston Boardroom</a></li>
+            <li><a href="#">Florence Mbambo</a></li>
+            <li><a href="#">Puleng Kegakilwe</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#upcommingtask">
+            <div class="pull-left">
+              <i class="ti-menu-alt"></i><span class="right-nav-text">Up Coming Task</span><span _ngcontent-c3="" class="badge badge-pill light-blu float-right mt-1">08</span>
+            </div>
+            <div class="pull-right"><i class="ti-angle-right"></i></div>
+            <div class="clearfix"></div>
+          </a>
+          <ul id="upcommingtask" class="collapse" data-parent="#sidebarnav">
+            <li><a href="index.html">No Up Coming Task</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#newtask">
+            <div class="pull-left">
+              <i class="ti-menu-alt"></i><span class="right-nav-text"> New Task</span><span _ngcontent-c3="" class="badge badge-pill colr-pink float-right mt-1">08</span>
+            </div>
+            <div class="pull-right"><i class="ti-angle-right"></i></div>
+            <div class="clearfix"></div>
+          </a>
+          <ul id="newtask" class="collapse" data-parent="#sidebarnav">
+            <li><a href="index.html">No New Task</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="sidebar-inbox">
+        <!-- message area -->
+        <div class="card-body">
+          <h5 class="card-title">Inbox</h5>
+          <!-- action group -->
+          <div class="scrollbar " tabindex="3" style="overflow-y: hidden; outline: none;">
+            <ul class="list-unstyled">
+              <li class="mb-30">
+                <div class="media">
+                  <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="assets/images/team/01.jpg" alt="" />
+                    <i class="avatar-online bg-success"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0">
+                      Martin smith <small class="float-right">6 days ago</small>
+                    </h6>
+                    <p>Create tailor-cut websites with the exclusive</p>
+                  </div>
+                </div>
+              </li>
+              <li class="mb-30">
+                <div class="media">
+                  <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="assets/images/team/02.jpg" alt="" />
+                    <i class="avatar-online bg-success"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0">
+                      Paul Flavius <small class="float-right">6 days ago</small>
+                    </h6>
+                    <p>Create tailor-cut websites with the exclusive</p>
+                  </div>
+                </div>
+              </li>
+              <li class="mb-30">
+                <div class="media">
+                  <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="assets/images/team/03.jpg" alt="" />
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0">
+                      Anne Smith <small class="float-right">6 days ago</small>
+                    </h6>
+                    <p>Create tailor-cut websites with the exclusive</p>
+                  </div>
+                </div>
+              </li>
+              <li class="mb-30">
+                <div class="media">
+                  <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="assets/images/team/01.jpg" alt="" />
+                    <i class="avatar-online bg-success"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0">
+                      Martin smith <small class="float-right">6 days ago</small>
+                    </h6>
+                    <p>Create tailor-cut websites with the exclusive</p>
+                  </div>
+                </div>
+              </li>
+              <li class="mb-30">
+                <div class="media">
+                  <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="assets/images/team/03.jpg" alt="" />
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0">
+                      Anne Smith <small class="float-right">6 days ago</small>
+                    </h6>
+                    <p>Create tailor-cut websites with the exclusive</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-dashboard-right">
+      <ul class="contentmenu">
+        <li><a class="colorblue" href="#">All</a></li>
+        <li><a class="colorred" href="#">Hearing</a></li>
+        <li><a class="coloryellow" href="#">Tasks</a></li>
+        <li><a class="colorlghtgreen" href="#">Birthdays</a></li>
+        <li><a class="colorlgtblue" href="#">Lead Details</a></li>
+        <li><a class="colorpink" href="#">Marketing</a></li>
+        <li><a class="colordarkgreen" href="#">Meeting</a></li>
+        <li><a class="colorvilote" href="#">Print</a></li>
+      </ul>
+      <app-calendarlist></app-calendarlist>
+      <footer class="bg-white p-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-center text-md-left">
+              <p class="mb-0">
+                &copy; Copyright
+                <span id="copyright">
+                  <script>
+                    document
+                      .getElementById("copyright")
+                      .appendChild(
+                        document.createTextNode(new Date().getFullYear())
+                      );
+                  </script></span><a href="#"> martinvermaakcrm.co.za </a> All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <ul class="text-center text-md-right">
+              <li class="list-inline-item">
+                <a href="#">Terms & Conditions </a>
+              </li>
+              <li class="list-inline-item"><a href="#">API Use Policy </a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy </a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!-- create new hearing popup content -->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Create New Court Dates</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card-body">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="hearingclient">Client</label>
+            <select class="form-control" id="hearingclient">
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="hearingcasedetails">Case Details</label>
+            <select class="form-control" id="hearingcasedetails">
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="hearingattorneys">Attorneys</label>
+            <select class="form-control" id="hearingattorneys">
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="hearingthridparty">Third Party</label>
+            <select class="form-control" id="hearingthridparty">
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="hearingcontact">Contacts</label>
+            <select class="form-control" id="hearingcontact">
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="hearingcourts">Courts</label>
+            <select class="form-control" id="hearingcourts">
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="alldayevent">All Day Event?</label> <br />
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="alldayeventyes" name="alldayeventyes" class="custom-control-input" />
+            <label class="custom-control-label" for="alldayeventyes">Yes</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="alldayeventno" name="alldayeventno" class="custom-control-input" />
+            <label class="custom-control-label" for="alldayeventno">No</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="hearingcourts">Hearing</label>
+          <textarea class="form-control" name="note"></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fromdate">From Date</label>
+            <div class="input-group">
+              <input class="form-control" placeholder="yyyy-mm-dd" name="eventStartdate" [(ngModel)]="eventStartdate"
+                ngbDatepicker #d1="ngbDatepicker" />
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="d1.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="todate">To Date</label>
+            <div class="input-group">
+              <input class="form-control" placeholder="yyyy-mm-dd" name="eventEndtdate" [(ngModel)]="eventEndtdate"
+                ngbDatepicker #d2="ngbDatepicker" />
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fromdate">From Time</label>
+            <div class="input-group">
+              <ngb-timepicker [(ngModel)]="startTime" name="start_time"></ngb-timepicker>
+            </div>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="fromdate">To Time</label>
+            <div class="input-group">
+              <ngb-timepicker [(ngModel)]="endTime" name="end_time"></ngb-timepicker>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+      close
+    </button>
+  </div>
+</ng-template>
+<!-- create new hearing popup content end -->
+
+<!-- create new tasks -->
+<ng-template #taskcontent let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Add Task</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="hearingclient">Subject</label><br />
+          <input class="form-control" type="text" name="newtasksubject" placeholder="Subject" />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="createnewclient">Client</label>
+            <select class="form-control" id="createnewclient">
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="newtaskfileref">File Ref.#</label>
+            <select class="form-control" id="newtaskfileref">
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+          <input type="checkbox" class="custom-control-input" id="customControlInline" />
+          <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="newconacts">Contacts</label>
+            <select class="form-control" id="newconacts">
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="newtaskthridparty">Third Party</label>
+            <select class="form-control" id="newtaskthridparty">
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+          <input type="checkbox" class="custom-control-input" id="taskername" />
+          <label class="custom-control-label" for="taskername">Ateesh</label>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="amdminattendees">Admins</label>
+            <select class="form-control" id="amdminattendees">
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="attendeesattorney">Attorneys</label>
+            <select class="form-control" id="attendeesattorney">
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="newtasklocation">Location</label>
+          <select class="form-control" id="newtasklocation">
+            <option>1</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fromdate">Event Start Date</label>
+            <div class="input-group">
+              <input class="form-control" placeholder="yyyy-mm-dd" name="eventStartdate" [(ngModel)]="eventStartdate"
+                ngbDatepicker #d1="ngbDatepicker" />
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="d1.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="todate">Event End Date</label>
+            <div class="input-group">
+              <input class="form-control" placeholder="yyyy-mm-dd" name="eventEnddate" [(ngModel)]="eventEndtdate"
+                ngbDatepicker #d2="ngbDatepicker" />
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="eventstarttime">Event Start Time</label>
+            <ngb-timepicker [(ngModel)]="startTime" name="event_start_time"></ngb-timepicker>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="todate">Event End Time</label>
+            <ngb-timepicker [(ngModel)]="endTime" name="event_end_time"></ngb-timepicker>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="alldayevent">All Day Event?</label> <br />
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="alldayeventyes" name="alldayeventyes" class="custom-control-input" />
+            <label class="custom-control-label" for="alldayeventyes">Yes</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="alldayeventno" name="alldayeventno" class="custom-control-input" />
+            <label class="custom-control-label" for="alldayeventno">No</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="taskdescription">Description</label>
+          <textarea class="form-control" name="taskdescription" placeholder="Description"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+      close
+    </button>
+  </div>
+</ng-template>
+<!-- create new task end -->
+
+<!-- create meeting popup start -->
+<ng-template #createmeeting let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Add Meeting</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="hearingclient">Subject</label><br />
+          <input class="form-control" type="text" name="newtasksubject" placeholder="Subject" />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="createnewclient">Client</label>
+            <select class="form-control" id="createnewclient">
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="newtaskfileref">File Ref.#</label>
+            <select class="form-control" id="newtaskfileref">
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+          <input type="checkbox" class="custom-control-input" id="customControlInline" />
+          <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="newconacts">Contacts</label>
+            <select class="form-control" id="newconacts">
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="newtaskthridparty">Third Party</label>
+            <select class="form-control" id="newtaskthridparty">
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+          <input type="checkbox" class="custom-control-input" id="taskername" />
+          <label class="custom-control-label" for="taskername">Ateesh</label>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="amdminattendees">Admins</label>
+            <select class="form-control" id="amdminattendees">
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="attendeesattorney">Attorneys</label>
+            <select class="form-control" id="attendeesattorney">
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="newtasklocation">Location</label>
+          <select class="form-control" id="newtasklocation">
+            <option>1</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fromdate">Event Start Date</label>
+            <div class="input-group">
+              <input class="form-control" placeholder="yyyy-mm-dd" name="eventStartdate" [(ngModel)]="eventStartdate"
+                ngbDatepicker #d1="ngbDatepicker" />
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="d1.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="todate">Event End Date</label>
+            <div class="input-group">
+              <input class="form-control" placeholder="yyyy-mm-dd" name="eventEnddate" [(ngModel)]="eventEndtdate"
+                ngbDatepicker #d2="ngbDatepicker" />
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="eventstarttime">Event Start Time</label>
+            <ngb-timepicker [(ngModel)]="startTime" name="event_start_time"></ngb-timepicker>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="todate">Event End Time</label>
+            <ngb-timepicker [(ngModel)]="endTime" name="event_end_time"></ngb-timepicker>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="alldayevent">All Day Event?</label> <br />
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="alldayeventyes" name="alldayeventyes" class="custom-control-input" />
+            <label class="custom-control-label" for="alldayeventyes">Yes</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="alldayeventno" name="alldayeventno" class="custom-control-input" />
+            <label class="custom-control-label" for="alldayeventno">No</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="taskdescription">Description</label>
+          <textarea class="form-control" name="taskdescription" placeholder="Description"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+      close
+    </button>
+  </div>
+</ng-template>
+
+<!-- create meeting popup end -->
