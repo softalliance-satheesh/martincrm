@@ -1,122 +1,145 @@
-<!-- <section class="height-100vh d-flex align-items-center page-section-ptb login" style="background-image: url(assets/images/login-bg.jpg);" >
-  <div class="container">
-     <div class="row justify-content-center no-gutters vertical-align">
-       <div class="col-lg-4 col-md-6 login-fancy-bg bg" style="background-image: url(assets/images/login-inner-bg.jpg);">
-         <div class="login-fancy">
-          <h2 class="text-white mb-20">Hello...!</h2>
-          <p class="mb-20 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum lobortis placerat</p>
-         </div> 
-       </div>
-       <div class="col-lg-4 col-md-6 bg-white">
-        <div class="login-fancy pb-40 clearfix">
-        <h3 class="mb-30">Sign In</h3>
-         <div class="section-field mb-20">
-             <label class="mb-10" for="name">User name* </label>
-               <input id="name" class="web form-control" type="text" placeholder="User name" name="web">
-            </div>
-            <div class="section-field mb-20">
-             <label class="mb-10" for="Password">Password* </label>
-               <input id="Password" class="Password form-control" type="password" placeholder="Password" name="Password">
-            </div>
-            <div class="section-field">
-              <div class="remember-checkbox mb-30">
-                 <input type="checkbox" class="form-control" name="two" id="two" />
-                 <label for="two"> Remember me</label>
-                 <a routerLink="/forgotpassword" class="float-right">Forgot Password?</a>
-                </div>
-              </div>
-              <a href="#" class="button">
-                <span>Log in</span>
-                <i class="fa fa-check"></i>
-             </a>
-             <p class="mt-20 mb-0">Don't have an account? <a  routerLink="/register">SignUp here</a></p>
-          </div>
-        </div>
-      </div>
-  </div>
-</section> -->
-
-
 <div class="wrapper">
   <div class="login_page h-100" id="login_page">
     <div class="login_page_left h-100">
       <div class="logo_sec">
-        
         <div class="logo pull-left">
-          <a href="#" title="Martin Vermaak CRM">
-            <img src="assets/images/logo-dark.png" alt="logo">
+          <a routerLink="/login" title="Martin Vermaak CRM">
+            <img src="assets/images/logo-dark.png" alt="logo" />
           </a>
         </div>
-        
-        <div class="link_navs pull-right">
-             </div>
+
+        <div class="link_navs pull-right"></div>
         <div class="clearfix"></div>
       </div>
-      
+
       <div class="inner_wrap">
-        <h2 class="Login-to-access-your-account">Login to access <br>your account</h2>
-        
-        <form id="login_frm" enctype="multipart/form-data" action="http://www.martinvermaakcrm.co.za/home/doLogin" method="post">
+        <h2 class="Login-to-access-your-account">
+          Login to access <br />your account
+        </h2>
+
+        <form id="login_frm" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
-            <input type="text" name="username" class="form-control" placeholder="Email ID / Username">
+            <input
+              type="text"
+              formControlName="username"
+              class="form-control"
+              placeholder="Email ID / Username"
+              required
+            />
+            <span
+              class="error text-danger"
+              *ngIf="submitted && f.controls.username.errors?.required"
+              >Email or Username required</span
+            >
           </div>
           <div class="form-group">
-            <input type="password" name="password" class="form-control" placeholder="Password">
+            <input
+              type="password"
+              formControlName="password"
+              class="form-control"
+              placeholder="Password"
+              required
+            />
+            <span
+              class="error text-danger"
+              *ngIf="submitted && f.controls.password.errors?.required"
+              >Password required</span
+            >
           </div>
-          
+
           <div class="captcha_group">
             <div class="checkbox">
               <label>
-              <!--  <input type="checkbox" name="captcha_check">-->
-				Prove you are a human
+                <!-- <input type="checkbox" name="captcha_check"> -->
+                Prove you are a human
               </label>
-             </div>
-             <div class="captcha_validation">               
-              1 + 13 = <input type="text" name="captchaResult" class="capt_input">
-              <input name="firstNumber" type="hidden" value="1">
-              <input name="secondNumber" type="hidden" value="13">
-             </div>
-             
-             <div class="clearfix"></div>
-           </div>
-           
-           
-           <div class="form-group text-center ">
-            <button type="submit" class="btn btn-submit">Login</button>
-           </div>
-           
+            </div>
+            <div class="captcha_validation">
+              {{ captcha.first }} + {{ captcha.second }} =
+              <input
+                type="text"
+                formControlName="captchaResult"
+                class="capt_input"
+                required
+              />
+              <input name="firstNumber" type="hidden" value="1" />
+              <input name="secondNumber" type="hidden" value="13" />
+            </div>
+
+            <span
+              class="error text-danger"
+              *ngIf="submitted && f.controls.captchaResult.errors?.required"
+              >Captcha required</span
+            >
+            <span
+              class="error text-danger"
+              *ngIf="
+                submitted &&
+                f.value.captchaResult != captchaTotal &&
+                f.controls.captchaResult.valid
+              "
+              >Captcha invalid</span
+            >
+
+            <div class="clearfix"></div>
+          </div>
+
+          <div class="form-group text-center ">
+            <button type="submit" class="btn btn-submit" [disabled]="loading">
+              Login
+            </button>
+          </div>
+
           <div class="text-center forgot_pwd">
             <a href="#">Forgot Password? Send request to admin</a>
           </div>
         </form>
-        
-      <div class="text-center log_contents">        
-        <p>Welcome to MV Customer relationship Management software.</p>
-        <p>Your IP and login time will be captured for security purposes. If you enter wrong passwords more than 3 times. your account will be locked and you need to contact administrator for unlocking the same.</p>
-      </div>
-      
-      </div>      
-    </div>
-    
-    <div class="login_page_right h-100" style="min-height: 420px;">
-      <div class="inner_wrap welcome">
-        <h1><span>Welcome to</span> Martin Vermaak Attorneys <span>CRM</span></h1>
-        <div class="wel_content">
-          <p>Application update details will be displayed here. Latest update and other modifications.</p>
-          <p>For any technical issues please send an email to support@martinvermaak.com, our technical team will respond / fix the issue within 24 hours.</p>
-          <p>This site is Martin Vermaak's confidential site and should not be disclosed to any outsiders</p>
-          <p>Thanks <br> MV CRM Team.</p>
+
+        <div class="text-center log_contents">
+          <p>Welcome to MV Customer relationship Management software.</p>
+          <p>
+            Your IP and login time will be captured for security purposes. If
+            you enter wrong passwords more than 3 times. your account will be
+            locked and you need to contact administrator for unlocking the same.
+          </p>
         </div>
       </div>
-    </div>  
-    
+    </div>
+
+    <div class="login_page_right h-100" style="min-height: 420px;">
+      <div class="inner_wrap welcome">
+        <h1>
+          <span>Welcome to</span> Martin Vermaak Attorneys <span>CRM</span>
+        </h1>
+        <div class="wel_content">
+          <p>
+            Application update details will be displayed here. Latest update and
+            other modifications.
+          </p>
+          <p>
+            For any technical issues please send an email to
+            support@martinvermaak.com, our technical team will respond / fix the
+            issue within 24 hours.
+          </p>
+          <p>
+            This site is Martin Vermaak's confidential site and should not be
+            disclosed to any outsiders
+          </p>
+          <p>
+            Thanks <br />
+            MV CRM Team.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="clearfix"></div>
   </div>
 </div>
 
-
-
-<!-- <div>
-  <h1>Ringing Bell Animation</h1>
-  <span class="bell fa fa-bell"></span>
-</div> -->
+<!--
+  <div>
+    <h1>Ringing Bell Animation</h1>
+    <span class="bell fa fa-bell"></span>
+  </div>
+-->
